@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./layout/head')%>
+</head>
+<body>
+    <header>
+        <%- include('./layout/header')%>
+    </header>
+    <main>
+        <section>
+            <% tasks.forEach(task => {%>
+            <article>
+                <h4>Task : <span><%=task.title %></span></h4>
+                <p>Completation Staus : <%=task.status%></p>
+                <a class="taskBtn" href="/tasks/<%=task.id%>">View Details </a>
+            </article>
+        <%});%>
+        </section>
+    </main>
+</body>
+</html>

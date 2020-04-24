@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #eee;
+  }
+  header {
+    background-color: darkcyan;
+    color: #eee;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 40px;
+  }
+  header nav ul {
+    list-style: none;
+  }
+  header nav ul li:nth-child(1) {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 10px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #eee;
+  }
+  article h4 span {
+    color: darkcyan;
+  }
+  section article {
+    margin: 20px;
+    border: 3px darkcyan solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  }
+  section article h4 {
+    padding: 10px;
+  }
+  section article p {
+    padding: 10px;
+  }
+  .taskBtn {
+    display: block;
+    color: #eee;
+    background-color: darkcyan;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 120px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .view-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  form {
+    margin: 0 auto;
+    width: 75vw;
+  }
+  label,
+  input,
+  textarea,
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+  button {
+    color: #eee;
+    background-color: darkcyan;
+    font-size: 16px;
+    padding: 10px;
+  }
+  

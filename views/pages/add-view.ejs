@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../layout/head')%>
+  </head>
+  <body>
+    <header>
+      <%- include('../layout/header')%>
+    </header>
+    <main>
+      <section>
+        <h2 class="view-title">Add a new Task</h2>
+        <form action="/add" method="POST">
+          <fieldset>
+            <legend>Add a task</legend>
+            <input type="text" name="title" placeholder="Task" />
+            <textarea
+              name="description"
+              placeholder="Description of the task"
+              cols="30"
+              row="10"
+            ></textarea>
+            <input type="text" name="category" placeholder="Category" />
+            <input type="text" name="contact" placeholder="Contact Person" />
+            <input
+              type="hidden"
+              name="status"
+              value="not done"
+              placeholder="status"
+            />
+            <button type="submit">Add this Task</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
